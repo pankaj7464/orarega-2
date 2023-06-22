@@ -1,0 +1,101 @@
+.testimonials {
+    padding: 1rem 0;
+}
+
+.testimonial_carousel {
+    width: 95vw;
+    text-align: center;
+    margin: 0 auto;
+    /* display: grid;
+    
+    grid-template-columns: 10% auto 10%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.home_card_header>p {
+    width: 50vw;
+    text-align: center;
+}
+
+
+.testimonial_carousel .left_scroll {}
+
+.testimonial_carousel img.right_scroll {
+    transform: rotate(180deg);
+}
+
+.testi_carousel_card img {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.testi_carousel_card .quote img {
+    width: 1rem;
+}
+
+.testi_carousel_card h2 {
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #3D3D3D;
+}
+
+.testimonial_carousel .card-container {
+    transition: transform 0.3s ease-in-out;
+    padding-top: 2rem;
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap
+}
+
+.testimonial_carousel .card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial_carousel .testi_carousel_card {
+    width: 22rem;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.testimonial_carousel .testi_carousel_card p {
+    white-space: break-spaces;
+    min-width: 21rem;
+}
+
+@media (max-width: 767px) {
+    .testimonial_carousel .testi_carousel_card {
+        width: 90vw;
+        height: 20vh;
+    }
+
+
+    .testimonial_carousel .card-container {
+        flex-direction: row;
+        height: 35vh;
+        width: 95vw;
+    }
+
+    .testi_carousel_card p {
+        min-width: 75vw !important;
+    }
+
+    .testi_carousel_card h2 {
+        font-size: 22px;
+    }
+
+    .testi_carousel_card img {
+        width: 3.5rem;
+    }
+}

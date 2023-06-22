@@ -1,0 +1,38 @@
+.hero {
+    margin: 0;
+    padding: 0;
+}
+
+.hero .hero-images img {
+    /* max-height: 70vh; */
+    min-width: 100vw !important;
+
+}
+
+.hero-images {
+    display: flex;
+    overflow: auto;
+    height: 80vh !important;
+    pointer-events: none;
+}
+
+.hero img {
+    width: 100vw;
+}
+
+.hero img:last-child {
+    /* margin-top: -5px; */
+}
+.hero-images::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width:724px) {
+    .hero-images{
+        height: 25vh !important;
+    }
+    .hero .hero-images img {
+        height: 25vh !important;
+       
+    }
+    
+}
